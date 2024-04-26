@@ -110,9 +110,9 @@ Alternatively, you can connect with me through my social media channels or via e
                     <span>Abioyehassan@gmail.com</span>
                 </div>
                 <div className="map-wrap">
-                <MapContainer center={[44.96366, 19.61045]} zoom={13}>
+                <MapContainer center={[41.8781, -87.6298]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[44.96366, 19.61045]}>
+            <Marker position={[41.8781, 87.6298]}>
               <Popup>Hassan lives here, come over for a cup of coffee :)</Popup>
             </Marker>
           </MapContainer>
