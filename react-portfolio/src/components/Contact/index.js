@@ -112,7 +112,7 @@ Alternatively, you can connect with me through my social media channels or via e
                 <div className="map-wrap">
                 <MapContainer center={[41.8781, -87.6298]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[41.8781, 87.6298]}>
+            <Marker position={[41.8781, -87.6298]}>
               <Popup>Hassan lives here, come over for a cup of coffee :)</Popup>
             </Marker>
           </MapContainer>
