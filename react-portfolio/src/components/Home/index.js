@@ -31,6 +31,7 @@ const Home = () => {
     return (
         <>
         <div className="container home-page">
+            <Logo/>
             <div className="text-zone">
                 <h1>
                 <span className={letterClass}>H</span>
@@ -55,9 +56,9 @@ const Home = () => {
                 <h2> Software Engineer / Fullstack Developer / Learner</h2>
                 <Link to="/contact" className='flat-button'> Contact Me</Link>
             </div>
-            <Logo/>
+            
         </div>
-        <Loader type="pacman"/>
+        <Loader type="ball-pulse"/>
         </>
     );
 }

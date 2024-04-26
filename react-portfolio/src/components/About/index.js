@@ -19,12 +19,12 @@ const About = () => {
     //     }, 4000)
 
     // }, [])
-    useEffect(() => {
-        const timeout = setTimeout(()=> {
-            setLetterClass('text-animate-hover')
-        },4000)
-        return () => clearTimeout(timeout)
-    })
+    // useEffect(() => {
+    //     const timeout = setTimeout(()=> {
+    //         setLetterClass('text-animate-hover')
+    //     },4000)
+    //     return () => clearTimeout(timeout)
+    // })
     return (
         <>
             <div className="container about-page">
@@ -75,7 +75,7 @@ const About = () => {
 
                 </div>
             </div>
-            <Loader type="pacman" />
+            <Loader type="ball-pulse" />
         </>
 )
 }

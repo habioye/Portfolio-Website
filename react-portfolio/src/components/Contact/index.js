@@ -118,7 +118,7 @@ Alternatively, you can connect with me through my social media channels or via e
           </MapContainer>
                 </div>
                 </div>
-            <Loader type="pacman" />
+            <Loader type="ball-pulse" />
         </>
 
     )
