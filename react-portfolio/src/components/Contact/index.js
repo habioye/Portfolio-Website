@@ -4,12 +4,19 @@ import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useRef, useState } from 'react';
 import React from 'react'
 import emailjs from '@emailjs/browser'
-import { MapContainer, TileLayer,Marker, Popup, useMap } from 'react-leaflet';
+import { MapContainer, TileLayer,Marker, Popup } from 'react-leaflet';
 
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const refForm = useRef()
+
+    useEffect(() => {
+        const timeout = setTimeout(()=> {
+            setLetterClass('text-animate-hover')
+        },4000)
+        return () => clearTimeout(timeout)
+    })
     
     // useEffect(()=> {
     //     return setTimeout(()=> {
@@ -63,7 +70,10 @@ const Contact = () => {
                         idx={15}></AnimatedLetters>
                     </h1>
                     <p>
-                        Some stuff about me.
+                        
+"Thank you for reaching out! I'm always eager to hear from visitors like you. Whether you have a question, feedback, or just want to say hello, feel free to drop me a message using the form below. I'll do my best to get back to you as soon as possible.
+
+Alternatively, you can connect with me through my social media channels or via email. I'm looking forward to our conversation!"
                     </p>
                     <div className="contact-form"
                     ref={refForm} onSubmit={sendEmail}>
@@ -103,7 +113,7 @@ const Contact = () => {
                 <MapContainer center={[44.96366, 19.61045]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[44.96366, 19.61045]}>
-              <Popup>Sloba lives here, come over for a cup of coffee :)</Popup>
+              <Popup>Hassan lives here, come over for a cup of coffee :)</Popup>
             </Marker>
           </MapContainer>
                 </div>

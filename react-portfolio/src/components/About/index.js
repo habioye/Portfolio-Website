@@ -19,6 +19,12 @@ const About = () => {
     //     }, 4000)
 
     // }, [])
+    useEffect(() => {
+        const timeout = setTimeout(()=> {
+            setLetterClass('text-animate-hover')
+        },4000)
+        return () => clearTimeout(timeout)
+    })
     return (
         <>
             <div className="container about-page">
@@ -31,13 +37,17 @@ const About = () => {
                         />
                     </h1>
                         <p>
-                            A little about me
+                        My journey at Princeton University was defined by a dedication to excellence in Computer Science, culminating in my graduation with a Bachelor of Science in Engineering and a commendable GPA of 3.9. This period was marked by diverse experiences, from my role as a Software Development Engineer at Amazon Web Services in Seattle, where I contributed to Kubernetes and alarm management systems, to my time as an Assistant Instructor, guiding students through lab activities and assignments in EGR 153.
+
                         </p>
                         <p>
-                            some more about me
+                        Outside the classroom, I embraced leadership roles, notably as Project Manager and Web-developer for the Mist Web Application at Butler College Council. Here, I led a team in developing a web app facilitating event creation on a Google Maps interface. Managing project scope and collaborating with stakeholders underscored my commitment to effective project management and stakeholder engagement.
+
+
                         </p>
                         <p>
-                            last few things to remember me by
+                        Throughout my academic and professional journey, I honed a versatile skill set, mastering languages like Python, Java, and Golang, alongside soft skills in leadership and communication. These experiences, coupled with coursework in Distributed Systems and Algorithms, as well as leadership roles such as Technology Chair for the Princeton Chapter of ACM, have prepared me for the challenges and opportunities ahead in the dynamic field of computer science.
+
                         </p>
                 </div>
                 <div className="stage-cube-cont">

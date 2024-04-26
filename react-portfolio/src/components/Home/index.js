@@ -10,8 +10,15 @@ import Loader from 'react-loaders';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = ['l','o','b','o','d','a','n']
-    const jobArray = ['w','e','b','d','e','v','o','p','e','r']
+    const nameArray = ['a','s','s','a','n']
+    const jobArray = ['S','o','f','t','w','a','r','e','/','W','e','b',' ','D','e','v','e','l','o','p','e','r']
+    
+    useEffect(() => {
+        const timeout = setTimeout(()=> {
+            setLetterClass('text-animate-hover')
+        },4000)
+        return () => clearTimeout(timeout)
+    })
     
     // useEffect(()=> {
     //     return setTimeout(()=> {
@@ -42,10 +49,10 @@ const Home = () => {
                 <br />
                 <AnimatedLetters letterClass={letterClass}
                 strArray={jobArray} 
-                idx={22}/>
+                idx={14}/>
                 
                 </h1>
-                <h2> Fronted Developer / JavaScript Expert/ Youtuber</h2>
+                <h2> Software Engineer / Fullstack Developer / Learner</h2>
                 <Link to="/contact" className='flat-button'> Contact Me</Link>
             </div>
             <Logo/>
