@@ -5,7 +5,8 @@ import LogoSubtitle from '../../assets/images/Hassan.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
-const Sidebar = () => (
+const Sidebar = () => {
+    return (
     <div className="nav-bar">
         <Link className='logo' to='/'>
             <img src={LogoS} alt="logo"/>
@@ -25,14 +26,13 @@ const Sidebar = () => (
         <ul>
             <li>
                 <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/hassan-abioye-801613186/">
-                    <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e"/>
+                    <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" className="anchor-icon"/>
                 </a>
             </li>
-        </ul>
-        <ul>
+            
             <li>
-                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/hassan-abioye-801613186/">
-                    <FontAwesomeIcon icon={faGithub} color="#4d4d4e"/>
+                <a target="_blank" rel="noreferrer" href="https://github.com/habioye">
+                    <FontAwesomeIcon icon={faGithub} color="#4d4d4e" className="anchor-icon"/>
                 </a>
             </li>
         </ul>
@@ -52,6 +52,9 @@ const Sidebar = () => (
         </ul> */}
 
     </div>
-)
+    )
+}
+
+
 
 export default Sidebar
