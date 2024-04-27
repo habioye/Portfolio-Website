@@ -40,6 +40,9 @@ const Contact = () => {
               alert("Failed to send the message! 😭😭😭",error.text)
             },
           );
+          var form = document.getElementsByName('email-form')[0];
+          form.reset();
+        
       };
     // const sendEmail = (e) => {
     //     e.preventDefault()
@@ -77,7 +80,7 @@ const Contact = () => {
 Alternatively, you can connect with me through my social media channels or via email. I'm looking forward to our conversation!"
                     </p>
                     <div className="contact-form">
-                        <form ref={refForm} onSubmit={sendEmail}>
+                        <form name="email-form" ref={refForm} onSubmit={sendEmail}>
                              <ul>
                                 <li className='half'>
                                     <input type="text" name="from_name" placeholder="Name" required />
