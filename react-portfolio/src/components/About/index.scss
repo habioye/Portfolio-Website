@@ -81,3 +81,20 @@
         transform: rotateY(90deg) rotateZ(90deg);
     }
 }
+
+
+.aws {
+    width: 70%;
+    height: auto;
+}
+
+.princeton {
+    width: auto;
+    height: 70%;
+}
+
+.acm {
+    width: 70%;
+    height: auto;
+    transform: rotate(-90deg);
+}
