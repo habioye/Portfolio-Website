@@ -33,13 +33,14 @@ const Contact = () => {
           .then(
             () => {
               console.log('SUCCESS!');
+              alert("Successfully sent the message! 😀😀😀")
             },
             (error) => {
               console.log('FAILED...', error.text);
-              alert("{error.text}")
+              alert("Failed to send the message! 😭😭😭",error.text)
             },
-          )
-      }
+          );
+      };
     // const sendEmail = (e) => {
     //     e.preventDefault()
 
@@ -75,12 +76,11 @@ const Contact = () => {
 
 Alternatively, you can connect with me through my social media channels or via email. I'm looking forward to our conversation!"
                     </p>
-                    <div className="contact-form"
-                    ref={refForm} onSubmit={sendEmail}>
-                        <form>
+                    <div className="contact-form">
+                        <form ref={refForm} onSubmit={sendEmail}>
                              <ul>
                                 <li className='half'>
-                                    <input type="text" name="name" placeholder="Name" required />
+                                    <input type="text" name="from_name" placeholder="Name" required />
 
                                     </li>
                                     <li className="half">
