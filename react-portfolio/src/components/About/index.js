@@ -34,7 +34,7 @@ const About = () => {
                     <h1>
                         <AnimatedLetters
                         letterClass={letterClass}
-                        strArray = {['A','b','o','u','t','e',' ','m','e']}
+                        strArray = {['A','b','o','u','t',' ','m','e']}
                         idx={15}
                         />
                     </h1>
