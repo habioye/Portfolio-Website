@@ -1,38 +1,60 @@
 import './index.scss';
-import { useEffect, useRef } from 'react'
-import gsap from 'gsap'
-import { DrawSVGPlugin } from 'gsap/dist/DrawSVGPlugin';
-import LogoH from '../../../assets/images/logo-h.png'
+import { useEffect, useState, useRef } from 'react'
+// import gsap from 'gsap'
+// import { DrawSVGPlugin } from 'gsap-trial/dist/DrawSVGPlugin';
+import LogoH from '../../../assets/images/logo-h.png';
+
 
 
 const Logo = () => {
+  // const [showImage, setShowImage] = useState(false);
+
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setShowImage(true);
+  //     alert("something should happen");
+  //   }, 2000); // Adjust the duration as needed
+
+  //   return () => clearTimeout(timer);
+  // }, []); // Run once on component mount
+
+  // const[flip,setFlip] = useState(false);
+
+  // const props = useSpring( {
+  //   to
+  // })
+
+
+
+
+
     const bgRef = useRef()
     const outlineLogoRef = useRef()
     const solidLogoRef = useRef()
     
-    useEffect(() => {
-        gsap.registerPlugin(DrawSVGPlugin)
+    // useEffect(() => {
+    //     gsap.registerPlugin(DrawSVGPlugin)
 
-        gsap
-        .timeline().to(bgRef.current, { duration: 1, opacity:1})
-        .from(outlineLogoRef.current, {drawSVG: 0, duration: 20,})
+    //     gsap
+    //     .timeline().to(bgRef.current, { duration: 1, opacity:1})
+    //     .from(outlineLogoRef.current, {drawSVG: 0, duration: 20,})
 
-        gsap.fromTo(
-            solidLogoRef.current, {
-                opacity: 0,
-            },
-            {
-                opacity: 1,
-                delay: 4,
-                duration: 4,
-            }
-    )
-    },[])
+    //     gsap.fromTo(
+    //         solidLogoRef.current, {
+    //             opacity: 0,
+    //         },
+    //         {
+    //             opacity: 1,
+    //             delay: 4,
+    //             duration: 4,
+    //         }
+    // )
+    // },[])
 
     return (
-        <div className="logo-container" ref={bgRef}>
+        <div className="logo-container" >
 
-            <img ref={solidLogoRef} className="solid-logo" src={LogoH} alt = "S" />
+            <img className="solid-logo" src={LogoH} alt = "H" />
             
             
 
