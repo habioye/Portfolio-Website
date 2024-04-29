@@ -36,20 +36,7 @@ const Sidebar = () => {
                 </a>
             </li>
         </ul>
-        {/* <ul>
-            <li>
-                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/hassan-abioye-801613186/">
-                    <FontAwesomeIcon icon={faYoutube} color="#4d4d4e"/>
-                </a>
-            </li>
-        </ul> */}
-        {/* <ul>
-            <li>
-                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/hassan-abioye-801613186/">
-                    <FontAwesomeIcon icon={faSkype} color="#4d4d4e"/>
-                </a>
-            </li>
-        </ul> */}
+
 
     </div>
     )

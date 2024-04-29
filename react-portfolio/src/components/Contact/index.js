@@ -18,13 +18,7 @@ const Contact = () => {
         return () => clearTimeout(timeout)
     })
     
-    // useEffect(()=> {
-    //     return setTimeout(()=> {
-    //         setLetterClass('text-animate-hover');
-    //         console.log("check later")
-    //     }, 4000)
 
-    // }, [])
     const sendEmail = (e) => {
         e.preventDefault();
     
@@ -44,27 +38,7 @@ const Contact = () => {
           form.reset();
         
       };
-    // const sendEmail = (e) => {
-    //     e.preventDefault()
 
-    //     emailjs
-    //     .sendForm (
-    //         'service_arqa81b',
-    //         'template_581317',
-    //         refForm.current,
-    //         {
-    //             publicKey: 'yH8YLXCtfvvva8TtG',
-    //         }
-
-    //     )
-    //     .then (() => {
-    //         alert('Message successfully sent!')
-    //         window.location.reload(false)
-    //     },
-    // () => {
-    //     alert('Failed to send the message, please try again')
-    // })
-    // }
     return (
         <>
             <div className="container contact-page">

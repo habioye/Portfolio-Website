@@ -20,13 +20,7 @@ const Home = () => {
         return () => clearTimeout(timeout)
     })
     
-    // useEffect(()=> {
-    //     return setTimeout(()=> {
-    //         setLetterClass('text-animate-hover');
-    //         console.log("check later")
-    //     }, 4000)
 
-    // }, [])
 
     return (
         <>
