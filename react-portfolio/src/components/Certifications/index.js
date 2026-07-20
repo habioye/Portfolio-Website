@@ -1,6 +1,7 @@
 import './index.scss'
 import {useState} from 'react'
 
-
-const Certifications = () => {}
-export default Certifications    const [letterClass] = useState('text-animate');
+const Certifications = () => {
+    const [letterClass] = useState('text-animate');
+}
+export default Certifications
